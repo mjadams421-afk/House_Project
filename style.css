@@ -10,6 +10,14 @@ header {
  height: auto;
  background-color: black;
  color: white;
- text-align: center;
+ position: relative;
+ left: 5%;
  font-size: 3rem;
+ transition: left 800ms linear 200ms, color 800ms ease-in 200ms, background-color 800ms ease-in 200ms;  
+}
+
+header:hover {
+ left: 50%;
+ background-color: white;
+ color: black;
 }
