@@ -30,7 +30,7 @@ article {
  color: black;
 }
 
-article #DataButton {
+article div.button {
  display: flex;
  width: 30%;
  height: auto;
@@ -44,12 +44,12 @@ article #DataButton {
  transition: background-color 800ms ease-in 200ms, font-size 800ms ease-in 200ms;
 }
 
- article #DataDisplay:hover {
+ article div.button:hover {
  background-color: yellowgreen;
  font-size: 1.7rem;
 }
 
-article #DataDisplay {
+article div.response {
   display: flex;
   width: 100%;
   height: auto;
@@ -60,3 +60,26 @@ article #DataDisplay {
   font-size: 1.6rem;
   border: 5px solid black;
 }
+
+figure {
+ display: flex;
+ width: 100%;
+ height: auto;
+ background-color: white;
+ color: black;
+ font-size: 1.3rem;
+}
+
+figure a {
+  color: blue;
+  font-size: 1.5rem;
+  transition: color 800ms ease-in 200ms, font-size 800ms ease-in 200ms;
+}
+
+
+ figure a:hover {
+  color: red;
+  font-size: 1.7rem;
+}
+
+ 

@@ -14,10 +14,14 @@
 </header>
 
 <article>
+<div class="button">
 <button id="DataButton" type="button">Click to enter data</button>
+</div>
+<div class="response">
 <p id="DataDisplay">RESPONSE</p>
-
+</div>
 <script>
+//Action for button
 const Data = document.getElementById('DataButton');
 //Response for variables
 const DDisplay = document.getElementById('DataDisplay');
@@ -29,17 +33,18 @@ function DataDisplay() {
  const BathroomNum = window.prompt('Enter Number of Bathrooms');
  const BedroomNum = window.prompt('Enter Number of Bedrooms');
  let Response = ''
-    if(SF > 3000) { Response += 'This is a large house. '; }
-    else if(SF > 2000) { Response += 'This is a medium house. '; }
-    else { Response += 'This is a small house. '; }
-    if(BathroomNum > 3) { Response += 'This house has many bathrooms. '; }
-    else if(BathroomNum > 1) { Response += 'This house has a decent amount of bathrooms. '; }
-    else { Response += 'This house has few bathrooms. '; }
-    if(BedroomNum > 4) { Response += 'This house has many bedrooms. '; }
-    else if(BedroomNum > 2) { Response += 'This house has a decent amount of bedrooms. '; }
-    else { Response += 'This house has few bedrooms. '; }
+    if(SF > 3000) { Response += 'This is a large house at ' + SF + ' square feet. '; }
+    else if(SF > 2000) { Response += 'This is a medium house at ' + SF + ' square feet. '; }
+    else { Response += 'This is a small house at ' + SF + ' square feet. '; }
+    if(BathroomNum > 3) { Response += 'This house has many bathrooms at ' + BathroomNum + '. '; }
+    else if(BathroomNum > 1) { Response += 'This house has a decent amount of bathrooms at ' + BathroomNum + '. '; }
+    else { Response += 'This house has few bathrooms at ' + BathroomNum + '. '; }
+    if(BedroomNum > 4) { Response += 'This house has many bedrooms at ' + BedroomNum + '. '; }
+    else if(BedroomNum > 2) { Response += 'This house has a decent amount of bedrooms at ' + BedroomNum + '. '; }
+    else { Response += 'This house has few bedrooms at ' + BedroomNum + '. '; }
  DDisplay.innerHTML = Response;
 }
+//Action listener for button
 Data.addEventListener('mousedown', DataDisplay);
 
 
@@ -48,7 +53,7 @@ Data.addEventListener('mousedown', DataDisplay);
 </article>
 
 <figure>
-
+<h3><a href="https://www.example.com" target="_blank">Cost per Square Foot by State</a></h3>
 </figure>
 
 
