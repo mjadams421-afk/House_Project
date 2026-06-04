@@ -10,14 +10,13 @@ header {
  height: auto;
  background-color: black;
  color: white;
- position: relative;
- left: 0%;
+ align-items: center;
+ justify-content: center;
  font-size: 3rem;
- transition: left 800ms linear 200ms, color 800ms ease-in 200ms, background-color 800ms ease-in 200ms;  
+ transition: color 3s ease-in 200ms, background-color 1.5s ease-in 200ms;  
 }
 
 header:hover {
- left: 50%;
  background-color: white;
  color: black;
 }
@@ -34,6 +33,8 @@ article div.button {
  display: flex;
  width: 30%;
  height: auto;
+ position: relative;
+ top: 50px;
  background-color: yellow;
  color: black;
  font-size: 1.5rem;
@@ -53,6 +54,8 @@ article div.response {
   display: flex;
   width: 100%;
   height: auto;
+  position: relative;
+  top: 50px;
   background-color: white;
   color: black;
   justify-content: center;
