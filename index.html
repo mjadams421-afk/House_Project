@@ -14,8 +14,8 @@
 </header>
 
 <article>
-<p id="DataButton" type="button">Click to enter data</p>
-<p id="DataDisplay"></p>
+<button id="DataButton" type="button">Click to enter data</button>
+<p id="DataDisplay">RESPONSE</p>
 
 <script>
 const Data = document.getElementById('DataButton');
@@ -28,7 +28,7 @@ function DataDisplay() {
  const SF = window.prompt('Enter Square Foot');
  const BathroomNum = window.prompt('Enter Number of Bathrooms');
  const BedroomNum = window.prompt('Enter Number of Bedrooms');
- const Response = ''
+ let Response = ''
     if(SF > 3000) { Response += 'This is a large house. '; }
     else if(SF > 2000) { Response += 'This is a medium house. '; }
     else { Response += 'This is a small house. '; }

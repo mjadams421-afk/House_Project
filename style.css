@@ -51,9 +51,9 @@ article #DataButton {
 
 article #DataDisplay {
   display: flex;
-  width: 50%;
+  width: 100%;
   height: auto;
-  background-color: yellow;
+  background-color: white;
   color: black;
   justify-content: center;
   align-items: center;
