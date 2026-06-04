@@ -11,7 +11,7 @@ header {
  background-color: black;
  color: white;
  position: relative;
- left: 5%;
+ left: 0%;
  font-size: 3rem;
  transition: left 800ms linear 200ms, color 800ms ease-in 200ms, background-color 800ms ease-in 200ms;  
 }
@@ -20,4 +20,43 @@ header:hover {
  left: 50%;
  background-color: white;
  color: black;
+}
+
+article {
+ display: flex;
+ width: 100%;
+ height: auto;
+ background-color: white;
+ color: black;
+}
+
+article #DataButton {
+ display: flex;
+ width: 30%;
+ height: auto;
+ background-color: yellow;
+ color: black;
+ font-size: 1.5rem;
+ justify-content: center;
+ align-items: center;
+ border: 3px solid black;
+ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ transition: background-color 800ms ease-in 200ms, font-size 800ms ease-in 200ms;
+}
+
+ article #DataDisplay:hover {
+ background-color: yellowgreen;
+ font-size: 1.7rem;
+}
+
+article #DataDisplay {
+  display: flex;
+  width: 50%;
+  height: auto;
+  background-color: yellow;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  border: 5px solid black;
 }

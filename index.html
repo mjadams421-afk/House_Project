@@ -14,13 +14,34 @@
 </header>
 
 <article>
-<p id="SFbutton" type="button">Click to enter data</p>
+<p id="DataButton" type="button">Click to enter data</p>
+<p id="DataDisplay"></p>
 
 <script>
-const SF = document.getElementById('SF');
+const Data = document.getElementById('DataButton');
+//Response for variables
+const DDisplay = document.getElementById('DataDisplay');
 
 
-const SFprompt = SF.window.prompt('Enter Square Foot');
+
+function DataDisplay() {
+ const SF = window.prompt('Enter Square Foot');
+ const BathroomNum = window.prompt('Enter Number of Bathrooms');
+ const BedroomNum = window.prompt('Enter Number of Bedrooms');
+ const Response = ''
+    if(SF > 3000) { Response += 'This is a large house. '; }
+    else if(SF > 2000) { Response += 'This is a medium house. '; }
+    else { Response += 'This is a small house. '; }
+    if(BathroomNum > 3) { Response += 'This house has many bathrooms. '; }
+    else if(BathroomNum > 1) { Response += 'This house has a decent amount of bathrooms. '; }
+    else { Response += 'This house has few bathrooms. '; }
+    if(BedroomNum > 4) { Response += 'This house has many bedrooms. '; }
+    else if(BedroomNum > 2) { Response += 'This house has a decent amount of bedrooms. '; }
+    else { Response += 'This house has few bedrooms. '; }
+ DDisplay.innerHTML = Response;
+}
+Data.addEventListener('mousedown', DataDisplay);
+
 
 </script>
 
