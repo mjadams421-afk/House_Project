@@ -65,12 +65,15 @@ article div.response {
 }
 
 figure {
+ position: relative;
+ left: 0px;
  display: flex;
  width: 100%;
  height: auto;
- background-color: white;
+ background-image: url('House_Image.jpg');
  color: black;
  font-size: 1.3rem;
+ 
 }
 
 figure a {
