@@ -67,7 +67,9 @@ article div.response {
 figure {
  position: relative;
  left: 0px;
+ top: 150px;
  display: flex;
+ flex-flow: column;
  width: 100%;
  height: auto;
  background-image: url('House_Image.jpg');
