@@ -72,9 +72,10 @@ figure {
  flex-flow: column;
  width: 100%;
  height: auto;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  background-image: url('House_Image.jpg');
- color: black;
- font-size: 1.3rem;
+ color: rgb(255, 196, 3);
+ font-size: 2rem;
  
 }
 
@@ -90,4 +91,33 @@ figure a {
   font-size: 1.7rem;
 }
 
+ figure button {
+  display: flex;
+  width: 50%;
+  height: auto;
+  font-size: 1.5rem;
+  background-color: white;
+ }
+
+
+ footer {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: black;
+  color: white;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.3rem;
+ }
+
+ footer a {
+  color: white;
+  font-size: 1.5rem;
+  transition: color 800ms ease-in 200ms, font-size 800ms ease-in 200ms;
+ }
+
+ footer a:hover {
+  color: red;
+  font-size: 1.7rem;
+ }
  
