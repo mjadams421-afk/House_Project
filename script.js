@@ -3,7 +3,7 @@ const responseA = document.getElementById('responseA');
 
 
   function AcresDisp() {
-  const sqFeet = window.prompt('Enter property area');
+  const sqFeet = window.prompt('Enter property area in square feet:');
   const acres = sqFeet*.00002296;
   let AcresResp = ' Your propery is ' + sqFeet + ' SF and ';
   if (acres < 1) { AcresResp += 'the acres is ' + acres + 'acres which is not enough for a typical suburban home.'}

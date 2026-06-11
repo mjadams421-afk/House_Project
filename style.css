@@ -74,7 +74,7 @@ figure {
  height: auto;
  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  background-image: url('House_Image.jpg');
- color: rgb(255, 196, 3);
+ color: rgb(31, 0, 123);
  font-size: 2rem;
  
 }
@@ -99,11 +99,21 @@ figure a {
   background-color: white;
  }
 
+ figure #reponseA {
+ background-color: white;
+ color: black;
+ border: 3px solid black;
+ }
+
 
  footer {
   display: flex;
   width: 100%;
   height: auto;
+  position: relative;
+  top: 200px;
+  justify-content: center;
+  align-items: center;
   background-color: black;
   color: white;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
