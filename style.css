@@ -118,6 +118,12 @@ figure a {
   color: white;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.3rem;
+  transition: color 4s linear 300ms, background-color 2s linear 300ms;
+ }
+
+ footer:hover {
+  background-color: whitesmoke;
+  color: darkblue;
  }
 
  footer a {
