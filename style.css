@@ -127,7 +127,7 @@ figure a {
  }
 
  footer a {
-  color: white;
+  color: darkgray
   font-size: 1.5rem;
   transition: color 800ms ease-in 200ms, font-size 800ms ease-in 200ms;
  }
