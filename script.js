@@ -1,7 +1,7 @@
 const buttonA = document.getElementById('buttonA');
 const responseA = document.getElementById('responseA');
 
-
+//Acres of house
   function AcresDisp() {
   const sqFeet = window.prompt('Enter property area in square feet:');
   const acres = sqFeet*.00002296;
@@ -17,3 +17,23 @@ const responseA = document.getElementById('responseA');
   }
 
  buttonA.addEventListener('mousedown',AcresDisp);
+
+ //Future cost of house
+  const buttonD = document.getElementById('buttonD');
+  const responseD = document.getElementById('responseD');
+
+  function FutCost() {
+  const preCost = window.prompt('Enter cost of house when purchased');
+  const t = window.prompt('Enter how many years since purchase of house');
+  const r = .04;
+  let answerCost = "The cost of your house after "+t+" years is ";
+   if (preCost > 0 && fuCost > 0) {
+   answerCost += preCost*(1+r)^t;
+   }
+   else {
+   answerCost += "Please enter a valid input";
+   }
+   responseD.innerHTML=answerCost;
+   }
+
+   buttonD.addEventListener('mousedown',FutCost);
